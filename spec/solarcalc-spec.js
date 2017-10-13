@@ -28,28 +28,28 @@ describe('Age', () => {
     let userAge = new Age("Human", [1987,7,10]);
     userAge.birthToSeconds();
     userAge.secondsToAge();
-    expect(userAge.mercury()).toEqual(7.2)
+    expect(userAge.mercury()).toEqual(7)
   });
 
   it('calucate age on venus', () => {
     let userAge = new Age("Human", [1987,7,10]);
     userAge.birthToSeconds();
     userAge.secondsToAge();
-    expect(userAge.venus()).toEqual(18.6)
+    expect(userAge.venus()).toEqual(18)
   });
 
   it('calucate age on mars', () => {
     let userAge = new Age("Human", [1987,7,10]);
     userAge.birthToSeconds();
     userAge.secondsToAge();
-    expect(userAge.mars()).toEqual(56.4)
+    expect(userAge.mars()).toEqual(56)
   });
 
   it('calucate age on jupiter', () => {
     let userAge = new Age("Human", [1987,7,10]);
     userAge.birthToSeconds();
     userAge.secondsToAge();
-    expect(userAge.jupiter()).toEqual(355.8)
+    expect(userAge.jupiter()).toEqual(355)
   });
 
 });

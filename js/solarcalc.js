@@ -1,14 +1,32 @@
 var moment = require('moment');
 
 export class Age {
-
-
   constructor(species, birthday, age){
     this.species = species;
     this.birthday = new Date(birthday[0], birthday[1] -1, birthday[2], 0, 0, 0);
     this.seconds = 0;
     this.age = 0;
+    this.life = 0;
   }
+
+  setLife(){
+    if(this.species === "Human"){
+      if(birthday[0] > 1985){
+        this.life = 85;
+      }
+      else if(bithday[0] > 1970){
+        this.life = 83;
+      }
+      else{
+        this.life = 80;
+      }
+    }
+    if(this.species === "Dog"){
+      this.life = 11;
+    }
+    return this.life
+  }
+
   birthToSeconds(){
     let today_seconds = Date.parse(moment().format())/1000
     let birth_seconds = Date.parse(this.birthday)/1000
@@ -20,17 +38,21 @@ export class Age {
     this.age = Math.floor(this.seconds / 31536000);
     return this.age
   }
+
   mercury(){
-    return Math.round(this.age * 0.24 * 100) / 100;
+    return Math.floor(this.age * 0.24);
   }
+
   venus(){
-    return Math.round(this.age * 0.62 * 100) / 100;
+    return Math.floor(this.age * 0.62);
   }
+
   mars(){
-    return Math.round(this.age * 1.88 * 100) / 100;
+    return Math.floor(this.age * 1.88);
   }
+
   jupiter(){
-    return Math.round(this.age * 11.86 * 100) / 100;
+    return Math.floor(this.age * 11.86);
   }
 }
 
