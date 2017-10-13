@@ -4,7 +4,7 @@ export class Age {
     this.birthDate = birthDate;
   }
   toYears(){
-    currentDate = moment();
+  
   }
 
 
