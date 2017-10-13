@@ -75,24 +75,3 @@ export class Age {
     return jupiter;
   }
 }
-
-
-// birthToYear(){
-//   let age = [];
-//   let year = moment().format('YYYY');
-//   let month = moment().format('MM');
-//   let day = moment().format('DD');
-//
-//   let compare_year = year - this.birthday[0];
-//   let compare_month = month - this.birthday[1];
-//   let compare_day = day - this.birthday[2];
-//
-//   if(compare_month > 0){
-//     age.push(compare_year);
-//     age.push(compare_month);
-//     if(day - this.birthday[2] > 0){
-//       age.push(compare_day);
-//     }
-//   }
-//   return age;
-// }
