@@ -5,7 +5,7 @@ export class Age {
     this.earth = age
   }
   toYears(){
-
+    let now = moment()
   }
   yearToSeconds(year){
     return year * 31,536,000
