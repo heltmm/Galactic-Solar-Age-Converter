@@ -26,3 +26,4 @@ describe('Age', () => {
     let userAge = new Age("Human", "08/07/1987");
     expect(age.earthYears.toSeconds).toEqual(946,080,000)
   });
+});
