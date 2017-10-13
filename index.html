@@ -14,19 +14,20 @@
       </div>
       <form id="age_input">
         <h1>Select your species</h1>
-        <select id='character_type'>
+        <select id='species'>
           <option value="Human">Human</option>
           <option value="Dog">Dog</option>
-          <option value="Mayfly">Mayfly</option>
         </select>
 
-        <input id="day" type="text" placeholder="DD" require>
+        <input id="day" type="number" placeholder="DD" maxlegth='2' minlength='2' required>
 
-        <input id="month" type="text" placeholder="MM" require>
+        <input id="month" type="number" placeholder="MM" maxlength='2' minlength='2' required>
 
-        <input id="year" type="text" placeholder="YYYY" require>
+        <input id="year" type="number" placeholder="YYYY" maxlength='4' minlength='4' required>
 
         <button type="submit">Convert Age</button>
       </form>
+      <div id='planets'>
+      </div>
     </div>
   </body>
